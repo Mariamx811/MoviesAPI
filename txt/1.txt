@@ -1,0 +1,6 @@
+CREATE Table thecamp_cinema(
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    movie_name varchar(50),
+    movie_length int,
+    movie_director varchar(50)
+);

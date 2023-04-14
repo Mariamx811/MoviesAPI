@@ -1,0 +1,7 @@
+CREATE TABLE thecamp_movies_ratings(
+	id int NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+    movie_id int,
+	movie_review varchar (255),
+    FOREIGN KEY (movie_id) REFERENCES thecamp_cinema(id) ON DELETE SET NULL,
+    date Date default(CURRENT_DATE) 
+);

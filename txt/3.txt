@@ -1,0 +1,3 @@
+SELECT tc.id , tc.movie_name , tc.movie_length,tc.movie_director,thecamp_movies_ratings.movie_review,thecamp_movies_ratings.date
+FROM thecamp_cinema as tc
+INNER JOIN thecamp_movies_ratings ON tc.id = thecamp_movies_ratings.movie_id
